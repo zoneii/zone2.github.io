@@ -1,0 +1,18 @@
+h1 { font-family: 'Compacta Std', sans-serif }
+h2 { font-family: 'Compacta Std', sans-serif }
+h3 { font-family: 'Compacta Std', sans-serif }
+h4 { font-family: 'Compacta Std', sans-serif }
+h5 { font-family: 'Compacta Std', sans-serif }
+h6 { font-family: 'Compacta Std', sans-serif }
+
+.mono { font-family: 'DecimaMonoPro'; }
+.compacta {font-family: 'Compacta Std'; }
+
+body {font-family: 'DecimaMonoPro'; font-size: 16px;}
+
+h1, h2, h3, h4 {font-size: 16px;}
+
+.artistTitle {
+  font-size: 117px;
+  font-family: 'Compacta Std';
+}

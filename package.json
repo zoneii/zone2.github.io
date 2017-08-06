@@ -1,42 +1,47 @@
 {
-  "name": "jkl-tachyons",
-  "version": "1.1.0",
-  "description": "Boilerplate for starting a project with Jekyll and Tachyons",
-  "main": "index.html",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/mrmrs/jkl-tachyons.git"
-  },
-  "keywords": [
-    "css",
-    "sass",
-    "oocss",
-    "performance"
-  ],
-  "author": "mrmrs",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/mrmrs/tachyons/issues"
-  },
-  "devDependencies": {
-    "browser-sync": "^1.1.1",
-    "copy-files": "^0.1.0",
-    "immutable-css-cli": "^1.1.1",
-    "tachyons-cli": "^1.0.8",
-    "watch": "^0.19.2"
-  },
-  "contributors": [
-    {
-      "name": "adam morse",
-      "email": "hi@mrmrs.cc"
-    }
-  ],
+  "name": "cr",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "start": "npm run build:watch",
-    "mutations": "immutable-css src/tachyons.css --strict",
-    "build": "npm run build:css && npm run build:minify",
-    "build:css": "tachyons src/tachyons.css > css/tachyons.css",
-    "build:minify": "tachyons src/tachyons.css -m > css/tachyons.min.css",
-    "build:watch": "watch 'npm run build' ./src/"
+    "start": "gulp",
+    "ast": "gulp generateDocs"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^6.4.0",
+    "browser-sync": "^2.14.0",
+    "browserify": "^13.1.0",
+    "css": "^2.1.0",
+    "css-parse": "^2.0.0",
+    "cssnano": "^3.7.4",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-connect": "^5.0.0",
+    "gulp-debug": "^2.1.2",
+    "gulp-file-include": "^0.5.1",
+    "gulp-include": "^2.3.1",
+    "gulp-postcss": "^6.1.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-shell": "^0.2.8",
+    "gulp-size": "^2.1.0",
+    "gulp-streamify": "^1.0.2",
+    "gulp-uglify": "^2.0.0",
+    "gulp-uncss": "^0.4.4",
+    "gulp-util": "^3.0.7",
+    "gulp-watch": "^0.6.8",
+    "lodash": "^2.4.1",
+    "postcss-at2x": "^2.0.1",
+    "postcss-css-variables": "^0.5.2",
+    "postcss-custom-media": "^5.0.1",
+    "postcss-import": "^8.1.2",
+    "run-sequence": "^1.2.2",
+    "vinyl-source-stream": "^1.1.0",
+    "vinyl-transform": "^1.0.0"
+  },
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "masonry-layout": "^4.1.1"
   }
 }

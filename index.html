@@ -2,28 +2,63 @@
 layout: default
 ---
 
-<section class="center mw7">
-  <article>
-    {% for post in site.posts limit: 1 %}
-       <h1>{{ post.title }}</h1>
-      {{ post.content }}
-    {% endfor %}
-  </article>
-  <section>
-    <article>
-      <ul>
-        {% for post in paginator.posts %}
-          <li>
-            <a href="{{ post.url }}" title="{{post.title}}">
-              <date datetime="{{post.date}}">
-                {{ post.date | date_to_long_string }}
-              </date>
-              {{ post.title }}
-            </a>
-          </li>
-        {% endfor %}
-      </ul>
-      <p>...</a></p>
-    </article>
-  </section>
-</section>
+<div class="w-100 absolute top-0">
+  <div class="flex flex-row content-between justify-between c-header">
+    <div></div>
+    <div class="mono">
+      28.08.17
+    </div>
+    <div>
+      <a href="http://instagram.com/zone2">
+        <img src="img/instagram.svg"/ width="24">
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="h-100 w-100 flex flex-row content-between justify-between c-main">
+  <div class="w-50 h-100 tc flex flex-column justify-center">
+    <div>
+      <img src="img/logo.svg" width="400" />
+    </div>
+  </div>
+
+  <div class="w-50 h-100 tc flex flex-column justify-center">
+    <div>
+      <h1 class="mono c-borderTitle">Originals London hosted by Zone</h1>
+      <h2 class="mono">Notting Hill Carnival</h2>
+      <img class"c-adiLogo" src="img/adidasLogo.svg" width="66"/>
+    </div>
+  </div>
+</div>
+
+<div class="absolute w-100 bg-red bottom-0">
+  <div class="pv2 c-footTop fl w-100">
+    <div class="marquee3k" data-speed="0.25">
+      <div>
+        <span class="mr4">Originals London hosted by ZONE II</span>
+        <span class="mr4"><a href="" class="black no-underline">SIGN UP FOR ENTRY</a></span>
+        <span class="mr4">Notting Hill Carnival</span>
+        <span class="mr4"><a href="" class="black no-underline">SIGN UP FOR ENTRY</a></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="fl w-100">
+    <form accept-charset="UTF-8" action="https://formkeep.com/f/7986618182ca" method="POST">
+      <input type="hidden" name="utf8" value="✓">
+      <input class="fl w-100 w-25-ns" type="text" id="name" name="name" placeholder="NAME">
+      <input class="fl w-100 w-25-ns" type="text" id="email" name="email" placeholder="EMAIL">
+      <input class="fl w-100 w-25-ns" type="text" id="shoesize" name="email" placeholder="SHOESIZE">
+      <button class="fl w-100 w-25-ns" type="submit">SIGN UP</button>
+    </form>
+  </div>
+
+
+  <div class="pt2 fl w-100">
+    <div class="marquee3k" data-speed="0.80">
+      <img class="db ma0" src="img/artists.svg" />
+    </div>
+  </div>
+</div>
+

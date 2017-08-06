@@ -1,0 +1,81 @@
+body, html {
+  background: #000;
+  color: #fff;
+  height: 100%;
+}
+
+.c-header {
+  padding: 18px;
+}
+
+.c-borderTitle {
+  border-bottom: solid 1px #fff;
+  padding-bottom: 12px;
+  margin-bottom: 12px;
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
+.c-adiLogo {
+  margin-top: 30px;
+}
+
+.bg-red {
+  background: #FF0000;
+}
+
+.red {
+  background: #FF0000;
+}
+
+.c-footTop {
+  border-bottom: 1px solid #000;
+}
+
+input {
+  background: #FF0000;
+  border: none;
+  border-right: solid 1px #000;
+  border-bottom: solid 1px #000;
+  outline: none;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-family: 'DecimaMonoPro';
+  text-transform: uppercase;
+  margin: 0;
+  padding: 20px 0;
+}
+
+input::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #fff;
+}
+input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #fff;
+}
+input::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #fff;
+}
+input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #fff;
+}
+input::-ms-input-placeholder { /* Microsoft Edge */
+   color:    #fff;
+}
+
+button {
+  background: #fff;
+  border: none;
+  font-family: 'DecimaMonoPro';
+  color: #FF0000;
+  text-align: center;
+  outline: none;
+  margin: 0;
+  padding: 20px 0;
+}
+
+@media (--breakpoint-not-small) {
+  .c-main {
+    margin-top: -50px;
+  }
+}

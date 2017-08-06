@@ -25,69 +25,73 @@
 
 
 /* External Library Includes */
-@import './_normalize';
+@import './tachyons/_normalize';
 
 
 /* Modules */
-@import './_box-sizing';
-@import './_aspect-ratios';
-@import './_images';
-@import './_background-size';
-@import './_background-position';
-@import './_outlines';
-@import './_borders';
-@import './_border-colors';
-@import './_border-radius';
-@import './_border-style';
-@import './_border-widths';
-@import './_box-shadow';
-@import './_code';
-@import './_coordinates';
-@import './_clears';
-@import './_display';
-@import './_flexbox';
-@import './_floats';
-@import './_font-family';
-@import './_font-style';
-@import './_font-weight';
-@import './_forms';
-@import './_heights';
-@import './_letter-spacing';
-@import './_line-height';
-@import './_links';
-@import './_lists';
-@import './_max-widths';
-@import './_widths';
-@import './_overflow';
-@import './_position';
-@import './_opacity';
-@import './_skins';
-@import './_skins-pseudo';
-@import './_spacing';
-@import './_negative-margins';
-@import './_tables';
-@import './_text-decoration';
-@import './_text-align';
-@import './_text-transform';
-@import './_type-scale';
-@import './_typography';
-@import './_utilities';
-@import './_visibility';
-@import './_white-space';
-@import './_vertical-align';
-@import './_hovers';
-@import './_z-index';
-@import './_children';
-@import './_styles';
+@import './tachyons/_box-sizing';
+@import './tachyons/_aspect-ratios';
+@import './tachyons/_images';
+@import './tachyons/_background-size';
+@import './tachyons/_background-position';
+@import './tachyons/_outlines';
+@import './tachyons/_borders';
+@import './tachyons/_border-colors';
+@import './tachyons/_border-radius';
+@import './tachyons/_border-style';
+@import './tachyons/_border-widths';
+@import './tachyons/_box-shadow';
+@import './tachyons/_code';
+@import './tachyons/_coordinates';
+@import './tachyons/_clears';
+@import './tachyons/_display';
+@import './tachyons/_flexbox';
+@import './tachyons/_floats';
+@import './tachyons/_font-family';
+@import './tachyons/_font-style';
+@import './tachyons/_font-weight';
+@import './tachyons/_forms';
+@import './tachyons/_heights';
+@import './tachyons/_letter-spacing';
+@import './tachyons/_line-height';
+@import './tachyons/_links';
+@import './tachyons/_lists';
+@import './tachyons/_max-widths';
+@import './tachyons/_widths';
+@import './tachyons/_overflow';
+@import './tachyons/_position';
+@import './tachyons/_opacity';
+@import './tachyons/_skins';
+@import './tachyons/_skins-pseudo';
+@import './tachyons/_spacing';
+@import './tachyons/_negative-margins';
+@import './tachyons/_tables';
+@import './tachyons/_text-decoration';
+@import './tachyons/_text-align';
+@import './tachyons/_text-transform';
+@import './tachyons/_type-scale';
+@import './tachyons/_typography';
+@import './tachyons/_utilities';
+@import './tachyons/_visibility';
+@import './tachyons/_white-space';
+@import './tachyons/_vertical-align';
+@import './tachyons/_hovers';
+@import './tachyons/_z-index';
+@import './tachyons/_children';
+@import './tachyons/_styles';
 
 /* Variables */
 /* Importing here will allow you to override any variables in the modules */
-@import './_colors';
-@import './_media-queries';
+@import './tachyons/_colors';
+@import './tachyons/_media-queries';
 
 /* Debugging */
-@import './_debug-children';
-@import './_debug-grid';
+@import './tachyons/_debug-children';
+@import './tachyons/_debug-grid';
+
+@import './fontface';
+@import './type';
+@import './main';
 
 /* Uncomment out the line below to help debug layout issues */
-/* @import './_debug'; */
+/* @import './tachyons/_debug'; */
