@@ -8,9 +8,23 @@ h6 { font-family: 'Compacta Std', sans-serif }
 .mono { font-family: 'DecimaMonoPro'; }
 .compacta {font-family: 'Compacta Std'; }
 
-body {font-family: 'DecimaMonoPro'; font-size: 16px;}
+body {font-family: 'DecimaMonoPro'; font-size: 16px;
+text-rendering: auto;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;}
 
-h1, h2, h3, h4 {font-size: 16px;}
+h1, h2, h3, h4 {
+  font-size: 14px;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media (--breakpoint-not-small) {
+  h1, h2, h3, h4 {
+    font-size: 16px;
+  }
+}
 
 .artistTitle {
   font-size: 117px;

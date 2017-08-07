@@ -3795,6 +3795,10 @@ code, .code {
 
 */
 
+.mx-auto {
+  margin: 0 auto;
+}
+
 .pa0 { padding: 0; }
 
 .pa1 { padding: .25rem; }
@@ -4116,6 +4120,10 @@ code, .code {
 }
 
 @media screen and (min-width: 30em) {
+.mx-auto-ns {
+  margin: 0 auto;
+}
+
   .pa0-ns  {  padding: 0; }
   .pa1-ns {  padding: .25rem; }
   .pa2-ns  {  padding: .5rem; }
@@ -4340,6 +4348,11 @@ code, .code {
 }
 
 @media screen and (min-width: 30em) and (max-width: 60em) {
+
+.mx-auto-m {
+  margin: 0 auto;
+}
+
   .pa0-m  {  padding: 0; }
   .pa1-m {  padding: .25rem; }
   .pa2-m  {  padding: .5rem; }
@@ -4565,6 +4578,11 @@ code, .code {
 }
 
 @media screen and (min-width: 60em) {
+
+.mx-auto-l {
+  margin: 0 auto;
+}
+
   .pa0-l  {  padding: 0; }
   .pa1-l {  padding: .25rem; }
   .pa2-l  {  padding: .5rem; }
@@ -5924,9 +5942,23 @@ h6 { font-family: 'Compacta Std', sans-serif }
 
 .compacta {font-family: 'Compacta Std'; }
 
-body {font-family: 'DecimaMonoPro'; font-size: 16px;}
+body {font-family: 'DecimaMonoPro'; font-size: 16px;
+text-rendering: auto;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;}
 
-h1, h2, h3, h4 {font-size: 16px;}
+h1, h2, h3, h4 {
+  font-size: 14px;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media screen and (min-width: 30em) {
+  h1, h2, h3, h4 {
+    font-size: 16px;
+  }
+}
 
 .artistTitle {
   font-size: 117px;
@@ -5943,12 +5975,12 @@ body, html {
   padding: 18px;
 }
 
-.c-borderTitle {
-  border-bottom: solid 1px #fff;
-  padding-bottom: 12px;
-  margin-bottom: 12px;
-  margin-left: 80px;
-  margin-right: 80px;
+@media screen and (min-width: 30em) {
+  .c-borderTitle {
+    border-bottom: solid 1px #fff;
+    padding-bottom: 12px;
+    margin-bottom: 12px;
+  }
 }
 
 .c-adiLogo {
@@ -6017,6 +6049,14 @@ button {
   .c-main {
     margin-top: -50px;
   }
+}
+
+.c-form {
+  display: none;
+}
+
+.c-form-active {
+  display: block;
 }
 
 /* Uncomment out the line below to help debug layout issues */

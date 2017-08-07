@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<div class="w-100 absolute top-0">
+<div class="w-100 absolute top-0 dn db-ns">
   <div class="flex flex-row content-between justify-between c-header">
     <div></div>
     <div class="mono">
@@ -16,18 +16,23 @@ layout: default
   </div>
 </div>
 
-<div class="h-100 w-100 flex flex-row content-between justify-between c-main">
-  <div class="w-50 h-100 tc flex flex-column justify-center">
-    <div>
-      <img src="img/logo.svg" width="400" />
+<div class="h-100 w-100 flex-ns flex-column flex-row-ns content-between justify-between c-main">
+  <div class="order-1-ns w-100 w-50-ns h-100-ns tc-ns flex flex-column justify-center">
+    <div style="max-width: 400px;" class="mx-auto-ns pa2 pa0-ns">
+      <div class="w-75 w-auto-ns fl fn-ns">
+        <h1 class="mono c-borderTitle ma0 mb1">Originals London hosted by Zone II</h1>
+        <h2 class="mono ma0 mb1">Notting Hill Carnival</h2>
+        <h3 class="mono db dn-ns ma0 mb2">28.08.17</h3>
+      </div>
+      <div class="w-25 w-auto-ns fl fn-ns">
+        <img class"c-adiLogo" src="img/adidasLogo.svg" width="66"/>
+      </div>
     </div>
   </div>
 
-  <div class="w-50 h-100 tc flex flex-column justify-center">
+  <div class="order-0-ns w-100 w-50-ns h-100-ns mt0 mt0-ns tc flex flex-column justify-center pa2 pa0-ns">
     <div>
-      <h1 class="mono c-borderTitle">Originals London hosted by Zone</h1>
-      <h2 class="mono">Notting Hill Carnival</h2>
-      <img class"c-adiLogo" src="img/adidasLogo.svg" width="66"/>
+      <img src="img/logo.svg" style="w-100 w-auto-ns" width="400" />
     </div>
   </div>
 </div>
@@ -37,14 +42,14 @@ layout: default
     <div class="marquee3k" data-speed="0.25">
       <div>
         <span class="mr4">Originals London hosted by ZONE II</span>
-        <span class="mr4"><a href="" class="black no-underline">SIGN UP FOR ENTRY</a></span>
+        <span class="mr4"><a href="" class="black no-underline c-signup">SIGN UP FOR ENTRY</a></span>
         <span class="mr4">Notting Hill Carnival</span>
-        <span class="mr4"><a href="" class="black no-underline">SIGN UP FOR ENTRY</a></span>
+        <span class="mr4"><a href="" class="black no-underline c-signup">SIGN UP FOR ENTRY</a></span>
       </div>
     </div>
   </div>
 
-  <div class="fl w-100">
+  <div class="fl w-100 c-form">
     <form accept-charset="UTF-8" action="https://formkeep.com/f/7986618182ca" method="POST">
       <input type="hidden" name="utf8" value="✓">
       <input class="fl w-100 w-25-ns" type="text" id="name" name="name" placeholder="NAME">
@@ -56,7 +61,7 @@ layout: default
 
 
   <div class="pt2 fl w-100">
-    <div class="marquee3k" data-speed="0.80">
+    <div class="marquee3k" data-speed="1.50">
       <div class="db ma0 pa0 no-repeat" style="width: 3635px; height: 88px; background-image: url(img/artists.svg);"></div>
     </div>
   </div>

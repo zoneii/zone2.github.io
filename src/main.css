@@ -8,12 +8,12 @@ body, html {
   padding: 18px;
 }
 
-.c-borderTitle {
-  border-bottom: solid 1px #fff;
-  padding-bottom: 12px;
-  margin-bottom: 12px;
-  margin-left: 80px;
-  margin-right: 80px;
+@media (--breakpoint-not-small) {
+  .c-borderTitle {
+    border-bottom: solid 1px #fff;
+    padding-bottom: 12px;
+    margin-bottom: 12px;
+  }
 }
 
 .c-adiLogo {
@@ -78,4 +78,16 @@ button {
   .c-main {
     margin-top: -50px;
   }
+}
+
+.c-form {
+  display: none;
+}
+
+.c-form-active {
+  display: block;
+}
+
+.c-artists {
+  background-repeat: no-repeat;
 }
