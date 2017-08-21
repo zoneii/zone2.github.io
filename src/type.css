@@ -1,32 +1,17 @@
-h1 { font-family: 'Compacta Std', sans-serif }
-h2 { font-family: 'Compacta Std', sans-serif }
-h3 { font-family: 'Compacta Std', sans-serif }
-h4 { font-family: 'Compacta Std', sans-serif }
-h5 { font-family: 'Compacta Std', sans-serif }
-h6 { font-family: 'Compacta Std', sans-serif }
-
 .mono { font-family: 'DecimaMonoPro'; }
 .compacta {font-family: 'Compacta Std'; }
 
-body {font-family: 'DecimaMonoPro'; font-size: 16px;
-text-rendering: auto;
--webkit-font-smoothing: antialiased;
--moz-osx-font-smoothing: grayscale;}
+body {font-family: 'DecimaMonoPro'; font-size: 18px;
+}
 
 h1, h2, h3, h4 {
-  font-size: 14px;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'DecimaMonoPro';
+  font-size: 20px;
+  font-weight: 100;
 }
 
 @media (--breakpoint-not-small) {
   h1, h2, h3, h4 {
-    font-size: 16px;
+    font-size: 20px;
   }
-}
-
-.artistTitle {
-  font-size: 117px;
-  font-family: 'Compacta Std';
 }

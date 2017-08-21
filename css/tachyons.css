@@ -5926,48 +5926,28 @@ url('../fonts/CompactaStd.svg#webfont') format('svg');
 font-weight: normal;
 font-style: normal; }
 
-h1 { font-family: 'Compacta Std', sans-serif }
-
-h2 { font-family: 'Compacta Std', sans-serif }
-
-h3 { font-family: 'Compacta Std', sans-serif }
-
-h4 { font-family: 'Compacta Std', sans-serif }
-
-h5 { font-family: 'Compacta Std', sans-serif }
-
-h6 { font-family: 'Compacta Std', sans-serif }
-
 .mono { font-family: 'DecimaMonoPro'; }
 
 .compacta {font-family: 'Compacta Std'; }
 
-body {font-family: 'DecimaMonoPro'; font-size: 16px;
-text-rendering: auto;
--webkit-font-smoothing: antialiased;
--moz-osx-font-smoothing: grayscale;}
+body {font-family: 'DecimaMonoPro'; font-size: 18px;
+}
 
 h1, h2, h3, h4 {
-  font-size: 14px;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'DecimaMonoPro';
+  font-size: 20px;
+  font-weight: 100;
 }
 
 @media screen and (min-width: 30em) {
   h1, h2, h3, h4 {
-    font-size: 16px;
+    font-size: 20px;
   }
 }
 
-.artistTitle {
-  font-size: 117px;
-  font-family: 'Compacta Std';
-}
-
 body, html {
-  background: #000;
-  color: #fff;
+  background: #fff;
+  color: #000;
   height: 100%;
 }
 
@@ -5987,23 +5967,11 @@ body, html {
   margin-top: 30px;
 }
 
-.bg-red {
-  background: #FF0000;
-}
-
-.red {
-  background: #FF0000;
-}
-
-.c-footTop {
-  border-bottom: 1px solid #000;
-}
-
 input {
-  background: #FF0000;
+  background: #000;
   border: none;
-  border-right: solid 1px #000;
-  border-bottom: solid 1px #000;
+  border-top: solid 6px #000;
+  border-bottom: solid 6px #000;
   outline: none;
   color: #fff;
   text-align: center;
@@ -6014,49 +5982,39 @@ input {
   padding: 20px 0;
 }
 
+.input-br {
+  border-right: solid 1px #fff !important;
+}
+
 input::-webkit-input-placeholder { /* WebKit, Blink, Edge */
-    color:    #fff;
+    color:    #FFF;
 }
 
 input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-   color:    #fff;
+ color:    #FFF;
 }
 
 input::-moz-placeholder { /* Mozilla Firefox 19+ */
-   color:    #fff;
+ color:    #FFF;
 }
 
 input:-ms-input-placeholder { /* Internet Explorer 10-11 */
-   color:    #fff;
+ color:    #FFF;
 }
 
 input::-ms-input-placeholder { /* Microsoft Edge */
-   color:    #fff;
+ color:    #FFF;
 }
 
 button {
   background: #fff;
-  border: none;
+  border: solid 6px #000;
   font-family: 'DecimaMonoPro';
-  color: #FF0000;
+  color: #000;
   text-align: center;
   outline: none;
   margin: 0;
   padding: 20px 0;
-}
-
-@media screen and (min-width: 30em) {
-  .c-main {
-    margin-top: -50px;
-  }
-}
-
-.c-form {
-  display: none;
-}
-
-.c-form-active {
-  display: block;
 }
 
 /* Uncomment out the line below to help debug layout issues */
