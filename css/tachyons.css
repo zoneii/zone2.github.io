@@ -5930,13 +5930,16 @@ font-style: normal; }
 
 .compacta {font-family: 'Compacta Std'; }
 
-body {font-family: 'DecimaMonoPro'; font-size: 18px;
+body, h1, h2, h3, h4 {
+  font-family: 'DecimaMonoPro';
+  font-size: 14px;
+  font-weight: 100;
 }
 
-h1, h2, h3, h4 {
-  font-family: 'DecimaMonoPro';
-  font-size: 20px;
-  font-weight: 100;
+@media screen and (min-width: 30em) {
+  body, h1, h2, h3, h4 {
+    font-size: 20px;
+  }
 }
 
 @media screen and (min-width: 30em) {
@@ -5963,31 +5966,58 @@ body, html {
   }
 }
 
-.c-adiLogo {
-  margin-top: 30px;
-}
-
 input {
   background: #000;
   border: none;
   border-top: solid 6px #000;
-  border-bottom: solid 6px #000;
   outline: none;
   color: #fff;
   text-align: center;
-  font-size: 16px;
   font-family: 'DecimaMonoPro';
   text-transform: uppercase;
   margin: 0;
-  padding: 20px 0;
+  height: 100%;
 }
 
 .input-br {
-  border-right: solid 1px #fff !important;
+  border-bottom: solid 1px #fff;
+}
+
+input,
+button {
+  height: 50px;
+  line-height: 40px;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+@media screen and (min-width: 30em) {
+
+  .input-br {
+    border-bottom: solid 6px #000;
+    border-right: solid 1px #fff !important;
+  }
+
+  input,
+  button {
+    height: 72px;
+    line-height: 66px;
+  }
+
+  input {
+    border-bottom: solid 6px #000;
+  }
 }
 
 input::-webkit-input-placeholder { /* WebKit, Blink, Edge */
     color:    #FFF;
+}
+
+/* Change the white to any color ;) */
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 72px black inset;
+    -webkit-text-fill-color: #fff;
 }
 
 input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
@@ -6015,6 +6045,30 @@ button {
   outline: none;
   margin: 0;
   padding: 20px 0;
+}
+
+.c-adiLogo,
+.c-zone2Logo {
+  height: 40px;
+}
+
+.c-origLogo {
+  width: 20px;
+}
+
+@media screen and (min-width: 30em) {
+.c-adiLogo,
+.c-zone2Logo {
+  height: 70px;
+}
+.c-origLogo {
+  width: 30px;
+}
+}
+
+button.submitted {
+  color: #fff !important;
+  background: #027AC0 !important;
 }
 
 /* Uncomment out the line below to help debug layout issues */
