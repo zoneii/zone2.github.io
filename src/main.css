@@ -27,6 +27,8 @@ input {
   text-transform: uppercase;
   margin: 0;
   height: 100%;
+  border-radius: 0;
+
 }
 
 .input-br {
@@ -39,6 +41,7 @@ button {
   line-height: 40px;
   padding-top: 0 !important;
   padding-bottom: 0 !important;
+  border-radius: 0 !important;
 }
 
 @media (--breakpoint-not-small) {
