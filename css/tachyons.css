@@ -5968,8 +5968,6 @@ body, html {
 
 input {
   background: #000;
-  border: none;
-  border-top: solid 6px #000;
   outline: none;
   color: #fff;
   text-align: center;
@@ -5977,10 +5975,19 @@ input {
   text-transform: uppercase;
   margin: 0;
   height: 100%;
+  border-radius: 0;
+
+
+  border-left: none;
+  border-top: none;
+  border-bottom: none;
+  border-right: none;
 }
 
 .input-br {
-  border-bottom: solid 1px #fff;
+  border-right: none;
+  border-bottom: none;
+  margin-bottom: 1px;
 }
 
 input,
@@ -5989,13 +5996,20 @@ button {
   line-height: 40px;
   padding-top: 0 !important;
   padding-bottom: 0 !important;
+  border-radius: 0 !important;
 }
 
 @media screen and (min-width: 30em) {
 
   .input-br {
-    border-bottom: solid 6px #000;
     border-right: solid 1px #fff !important;
+    border-bottom: none;
+    margin-bottom: 0;
+  }
+
+  input {
+    border-top: solid 6px #000;
+    border-bottom: solid 6px #000;
   }
 
   input,

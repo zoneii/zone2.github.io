@@ -5,7 +5,7 @@ $(document).ready(function() {
   });
 
 
-  $('#emailForm').submit(function(event) {
+  $('#emailForm').unbind('submit').bind('submit',function() {
       event.preventDefault();
 
       var formEl = $(this);
