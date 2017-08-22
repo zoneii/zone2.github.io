@@ -6001,6 +6001,10 @@ button {
 
 @media screen and (min-width: 30em) {
 
+  .c-content {
+    margin-bottom: 150px;
+  }
+
   .input-br {
     border-right: solid 1px #fff !important;
     border-bottom: none;

@@ -51,6 +51,10 @@ button {
 
 @media (--breakpoint-not-small) {
 
+  .c-content {
+    margin-bottom: 150px;
+  }
+
   .input-br {
     border-right: solid 1px #fff !important;
     border-bottom: none;
